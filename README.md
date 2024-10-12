@@ -12,6 +12,7 @@ To faciliate the demonstration of different tools and pre-commit hooks, the repo
 
 - `pre-commit-basics`: Contains the basic setup for pre-commit hooks
 - `pre-commit-ruff`: Contains the setup for pre-commit hooks with `ruff` to format Python code
+- `pre-commit-ruff-pyproject`: Contains the setup for pre-commit hooks with `ruff` to format Python code with configurations in `pyproject.toml`
 - `pre-commit-mypy`: Contains the setup for pre-commit hooks with `mypy` to statically type check Python code and ensure type safety
 - `pre-commit-poetry`: Contains the setup for pre-commit hooks with `poetry` to check for dependency and output `requirements.txt`
 - `pre-commit-pytest`: Contains the setup for pre-commit hooks with `pytest` to run unit tests and show code-coverage
