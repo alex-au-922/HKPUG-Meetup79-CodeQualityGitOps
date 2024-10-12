@@ -9,3 +9,6 @@ select = ["F", "E", "W", "C90", "S", "I", "N", "D", "UP"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "pep257" # Not relevant
+
+[tool.mypy]
+exclude="venv"
