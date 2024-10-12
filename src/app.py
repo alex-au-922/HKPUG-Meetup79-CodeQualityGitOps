@@ -2,6 +2,7 @@ import random
 from contextlib import contextmanager, nullcontext
 from typing import Generator, Optional
 
+
 @contextmanager
 def random_seed(seed: int) -> Generator[None, None, None]:
     """Sets the random seed for the duration of the context."""
@@ -11,16 +12,15 @@ def random_seed(seed: int) -> Generator[None, None, None]:
         yield
     finally:
         random.setstate(curr_seed)
-        
+
+
 def print_random_number(seed: Optional[int] = None) -> None:
     """Prints a random number between 1 and 10."""
-    
     context_manager = random_seed(seed) if seed is not None else nullcontext()
-    
+
     with context_manager:
-    
         num = random.random()
-        
+
         if 0 <= num < 0.1:
             print("1")
         elif 0.1 <= num < 0.2:

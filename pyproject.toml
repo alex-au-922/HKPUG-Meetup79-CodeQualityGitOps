@@ -4,7 +4,7 @@ target-version = "py38" # Not relevant
 src = ["tests", "docs"] # Not relevant
 
 [tool.ruff.lint]
-ignore = ["D100", "D104", "N999"]
+ignore = ["D100", "D104", "N999", "D401", "C901", "S311", "S101"]
 select = ["F", "E", "W", "C90", "S", "I", "N", "D", "UP"]
 
 [tool.ruff.lint.pydocstyle]
@@ -17,4 +17,5 @@ exclude="venv"
 markers = [
     "naive: very naive method that is not recommended",
     "smart: smart method that is recommended",
+    "robust: robust method that covers all edge cases",
 ]
