@@ -1,7 +1,10 @@
+# Minimum pre-commit version required
+minimum_pre_commit_version: 3.2.0
 
-
+# Whether to stop the commit if any of the hooks fail
 fail_fast: false
 
+# The list of hooks that are run by pre-commit
 repos:
   - repo: https://github.com/python-poetry/poetry
     rev: '1.8.0'  # add version here
