@@ -6,6 +6,7 @@ The slides for the talk can be found [here](https://1drv.ms/p/s!AuHrIoMSVvdAgbIg
 
 ## Branches
 To faciliate the demonstration of different tools and pre-commit hooks, the repository contains the following branches:
+
 - `pre-commit-basics`: Contains the basic setup for pre-commit hooks
 - `pre-commit-ruff`: Contains the setup for pre-commit hooks with `ruff` to format Python code
 - `pre-commit-ruff-pyproject`: Contains the setup for pre-commit hooks with `ruff` to format Python code with configurations in `pyproject.toml`
