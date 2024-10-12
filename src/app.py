@@ -41,3 +41,13 @@ def print_random_number(seed: Optional[int] = None) -> None:
             print("9")
         elif 0.9 <= num < 1:
             print("10")
+
+
+def print_random_number_smart(seed: Optional[int] = None) -> None:
+    """Prints a random number between 1 and 10."""
+    context_manager = random_seed(seed) if seed is not None else nullcontext()
+
+    with context_manager:
+        num = random.random()
+
+        print(int(num * 10) + 1)
