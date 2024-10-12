@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 88        # Not relevant
+target-version = "py38" # Not relevant
+src = ["tests", "docs"] # Not relevant
+
+[tool.ruff.lint]
+ignore = ["D100", "D104", "N999"]
+select = ["F", "E", "W", "C90", "S", "I", "N", "D", "UP"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257" # Not relevant
