@@ -12,3 +12,9 @@ convention = "pep257" # Not relevant
 
 [tool.mypy]
 exclude="venv"
+
+[tool.pytest.ini_options]
+markers = [
+    "naive: very naive method that is not recommended",
+    "smart: smart method that is recommended",
+]
