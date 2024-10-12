@@ -1,3 +1,6 @@
+# Minimum pre-commit version required
+minimum_pre_commit_version: 3.2.0
+
 # Whether to stop the commit if any of the hooks fail
 fail_fast: false
 
@@ -34,3 +37,13 @@ repos:
         language: system
         pass_filenames: false
         files: ^src/.*\.py$
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        # The entry point for the hook, in this case, pytest.
+        entry: >
+          pytest -k robust -v --cov
+          --cov-branch --cov-fail-under=90
+        language: system
+        pass_filenames: false
