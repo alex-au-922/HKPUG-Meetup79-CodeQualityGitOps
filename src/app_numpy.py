@@ -11,3 +11,8 @@ def add(a: npt.NDArray[T], b: npt.NDArray[T]) -> npt.NDArray[T]:
     """Add two arrays."""
     # return np.add(a, b)
     return a + b
+
+def sub(a: npt.NDArray[T], b: npt.NDArray[T]) -> npt.NDArray[T]:
+    """Subtract two arrays."""
+    # return np.subtract(a, b)
+    return a - b
