@@ -14,6 +14,8 @@ repos:
       - id: poetry-export
         name: poetry-export-requirements
         args: ["-f", "requirements.txt", "-o", "requirements.txt", "--without-hashes"]
+        always_run: true
       - id: poetry-export
         name: poetry-export-dev-requirements
         args: ["-f", "requirements.txt", "-o", "requirements-dev.txt", "--without-hashes", "--with", "dev"]
+        always_run: true
