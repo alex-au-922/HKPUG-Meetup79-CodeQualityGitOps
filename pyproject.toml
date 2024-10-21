@@ -19,3 +19,7 @@ markers = [
     "smart: smart method that is recommended",
     "robust: robust method that covers all edge cases",
 ]
+
+[tool.radon]
+exclude = "test/"
+cc_min = "A"
