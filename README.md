@@ -16,7 +16,7 @@ To faciliate the demonstration of different tools and pre-commit hooks, the repo
 - `pre-commit-mypy`: Contains the setup for pre-commit hooks with `mypy` to statically type check Python code and ensure type safety
 - `pre-commit-poetry`: Contains the setup for pre-commit hooks with `poetry` to check for dependency and output `requirements.txt`
 - `pre-commit-pytest`: Contains the setup for pre-commit hooks with `pytest` to run unit tests and show code-coverage
-- `pre-commit-all`: Contains the setup for pre-commit hooks with all the above tools
+- `pre-commit-radon`: Contains the setup for pre-commit hooks with `radon` to check for code complexity
 
 ## Basic Requirements
 
