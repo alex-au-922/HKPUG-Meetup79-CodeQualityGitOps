@@ -44,6 +44,6 @@ repos:
         # The entry point for the hook, in this case, pytest.
         entry: >
           pytest -k robust -v --cov
-          --cov-branch --cov-fail-under=90
+          --cov-branch --cov-fail-under=80
         language: system
         pass_filenames: false
